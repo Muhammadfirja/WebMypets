@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyPets</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="img/logo1.png" type="image/png">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Navbar Start -->
+ <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 px-3 px-lg-5">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="img/logo.png" alt="Logo Pet Shop" style="height: 65px;">
+    </a>    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0 pe-lg-5">
+            <a href="index.html" class="nav-item nav-link">Beranda</a>
+            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <div class="nav-item dropdown dropdown-hover">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Peluang Usaha</a>
+                <div class="dropdown-menu border-0 shadow-sm rounded-3">
+                    <a href="dropshipper.html" class="dropdown-item">Dropshipper</a>
+                    <a href="franchiser.html" class="dropdown-item">Franchiser</a>
+                </div>
+            </div>          
+            <a href="product.html" class="nav-item nav-link active">Produk</a>
+            <a href="refund.html" class="nav-item nav-link">Refund</a>   
+            <a href="artikel.html" class="nav-item nav-link ">Artikel</a>
+            <a href="contact.html" class="nav-item nav-link">Kontak Kami</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar End -->
+
+
+   <!-- Produk Section Start -->
+<div class="container my-5">
+    <!-- Judul Section -->
+    <div class="border-start border-5 ps-4 mb-5" style="border-color: #f26522 !important;" data-aos="fade-right">
+        <h6 class="text-uppercase" style="color: #f26522;">Produk Kami</h6>
+        <h1 class="display-5 text-uppercase mb-0">Temukan Produk Pilihan</h1>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs mb-4 border-0" id="produkTab" role="tablist" data-aos="fade-up">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active text-uppercase fw-bold" style="color: #f26522;" id="rekomendasi-tab" data-bs-toggle="tab" data-bs-target="#rekomendasi" type="button" role="tab">Rekomendasi</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase fw-bold" style="color: #f26522;" id="terlaris-tab" data-bs-toggle="tab" data-bs-target="#terlaris" type="button" role="tab">Terlaris</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase fw-bold" style="color: #f26522;" id="lainnya-tab" data-bs-toggle="tab" data-bs-target="#lainnya" type="button" role="tab">Lainnya</button>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="produkTabContent">
+        <!-- Rekomendasi Tab -->
+        <div class="tab-pane fade show active" id="rekomendasi" role="tabpanel">
+            <div class="row g-4">
+                <!-- Produk 1 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/produk5.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 1">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn" style="background-color: #f26522; width: 45px;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/produk4.jpg" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 2">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn" style="background-color: #f26522; width: 45px;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/produk3.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 3">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn" style="background-color: #f26522; width: 45px;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Terlaris Tab -->
+        <div class="tab-pane fade" id="terlaris" role="tabpanel">
+            <div class="row g-4">
+                <!-- Produk 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/produk2.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 1">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/produk1.jpg" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 2">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Snack Kucing Crunchy</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                </div>
+                                <small class="text-muted">(89 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Camilan sehat dan lezat dengan aroma tuna, cocok sebagai hadiah harian untuk kucing kesayangan.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 150.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 120.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/product-4.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 3">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Vitamin Kucing Sehat</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(105 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Membantu meningkatkan daya tahan tubuh dan menjaga vitalitas kucing secara alami.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 180.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 145.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-19%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Lainnya Tab -->
+        <div class="tab-pane fade" id="lainnya" role="tabpanel">
+            <div class="row g-4">
+                <!-- Produk 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/product-1.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 1">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                   style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Produk 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/product-2.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 2">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                   style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Produk 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 220px;">
+                            <img src="img/product-3.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Produk 3">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-1" style="min-height: 40px;">
+                                <span class="badge bg-warning text-dark fw-semibold me-2" style="font-size: 0.7rem;">Best Seller</span>
+                                <h6 class="fw-semibold text-dark mb-0">Makanan Kucing Premium</h6>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="text-warning small me-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                                <small class="text-muted">(120 ulasan)</small>
+                            </div>
+                            <p class="text-muted small mb-2" style="min-height: 42px; text-align: justify;">
+                                <i class="bi bi-info-circle me-1 text-orange"></i>
+                                Nutrisi lengkap untuk bulu sehat dan pencernaan optimal. Ideal untuk kucing segala usia.
+                            </p>
+                            <div class="mb-3">
+                                <span class="text-muted text-decoration-line-through small">Rp 250.000</span>
+                                <h5 class="fw-bold mb-0" style="color: #f26522;">Rp 199.000</h5>
+                                <span class="badge bg-danger ms-2" style="font-size: 0.75rem;">-20%</span>
+                            </div>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn w-100 d-flex align-items-center justify-content-center text-white gap-1 aksi-btn" style="background-color: #f26522;">
+                                    <i class="bi bi-cart"></i> Beli
+                                </a>
+                                <a href="#" class="btn d-flex align-items-center justify-content-center text-white aksi-btn"
+                                   style="background-color: #f26522; width: 45px; transition: all 0.3s;">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Produk Section End -->
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <!-- Logo dan Alamat -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <img src="img/logo.png" alt="MyPets Logo" style="max-height: 100px;">
+                    <h6 class="mt-2">PT DUTA MARITIM JAYA</h6>
+                    <p>Jl. T. Amir Hamzah No.55a, Helvetia Tim., Kec. Medan Helvetia,<br>
+                        Kota Medan, Sumatera Utara 20117</p>
+                    <p>Pusat Kebutuhan Hewan Peliharaan Terlengkap Di Indonesia &<br>
+                        Memberikan pelayanan terbaik untuk Anda dan hewan kesayangan Anda.</p>
+                </div>
+    
+                <!-- Ikuti Kami dan WhatsApp -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h6 class="mb-3">Ikuti Kami</h6>
+                    <div class="d-flex mb-3">
+                        <a href="#"><img src="img/ig.png" style="width: 40px;" alt="IG" class="me-2"></a>
+                        <a href="#"><img src="img/tiktok.png" style="width: 40px;" alt="Tiktok" class="me-2"></a>
+                        <a href="#"><img src="img/shopee.jpg" style="width: 40px;" alt="Shopee" class="me-2"></a>
+                        <a href="#"><img src="img/linkedin.png" style="width: 40px;" alt="LinkedIn"></a>
+                    </div>
+                    <a href="https://wa.me/nomoranda" class="btn btn-success btn-sm">
+                        <i class="bi bi-whatsapp me-1"></i> Chat Di Whatsapp
+                    </a>
+                </div>
+    
+                <!-- Link Tautan -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <h6 class="mb-3">Klik Tautan</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="about.html">Tentang Kami</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="service.html">Service</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="franchise.html">Franchise</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="dropshiper.html">Dropshiper</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="product.html">Produk</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="refund.html">Refun</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="artikel.html">Artikel</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>            
+    
+                <!-- Map -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="400">
+                    <h6 class="mb-3">Map Store</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127684.12261565387!2d98.6644199!3d3.6070103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313126e9bc7785%3A0x986eea96108e5c02!2sPT.%20Duta%20Maritim%20Jaya!5e0!3m2!1sid!2sid!4v1685037073892!5m2!1sid!2sid"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>                       
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer Bawah -->
+<div class="container-fluid bg-dark text-white-50 py-3">
+    <div class="container text-center">
+        <small>&copy; 2025 MyPets. All rights reserved.</small>
+    </div>
+</div>
+<!-- Footer End -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,           // animasi hanya muncul sekali
+    delay: 100,           // jeda awal animasi
+    duration: 800,        // durasi animasi
+    easing: 'ease-in-out' // efek animasinya
+});
+</script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

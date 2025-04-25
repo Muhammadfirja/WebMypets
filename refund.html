@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyPets</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="img/logo1.png" type="image/png">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Navbar Start -->
+ <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 px-3 px-lg-5">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="img/logo.png" alt="Logo Pet Shop" style="height: 65px;">
+    </a>    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0 pe-lg-5">
+            <a href="index.html" class="nav-item nav-link">Beranda</a>
+            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <div class="nav-item dropdown dropdown-hover">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Peluang Usaha</a>
+                <div class="dropdown-menu border-0 shadow-sm rounded-3">
+                    <a href="dropshipper.html" class="dropdown-item ">Dropshipper</a>
+                    <a href="franchiser.html" class="dropdown-item ">Franchiser</a>
+                </div>
+            </div>
+            <a href="product.html" class="nav-item nav-link">Produk</a>
+            <a href="refund.html" class="nav-item nav-link active">Refund</a>  
+            <a href="artikel.html" class="nav-item nav-link">Artikel</a>
+            <a href="contact.html" class="nav-item nav-link">Kontak Kami</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar End -->
+
+<!-- Refund Barang Start -->
+<section class="refund-section">
+    <div class="container">
+        <!-- Judul Blog -->
+        <div class="border-start border-5 ps-4 mb-5" style="max-width: 600px; border-color: #f26522 !important;" data-aos="fade-right">
+            <h6 class="text-uppercase" style="color: #f26522;">Refund</h6>
+            <h1 class="display-5 text-uppercase mb-0">Pengembalian Barang</h1>
+        </div>
+
+        <!-- Isi Refund -->
+        <h3 data-aos="fade-up" data-aos-delay="100">Prosedur Pengembalian Barang</h3>
+        <p data-aos="fade-up" data-aos-delay="200">
+            Kami di Mypets berkomitmen untuk memberikan kepuasan kepada pelanggan. Jika Anda merasa tidak puas dengan produk yang diterima atau mengalami masalah dengan barang yang dipesan, kami menyediakan layanan pengembalian barang yang mudah dan cepat.
+        </p>
+
+        <h4 data-aos="fade-up" data-aos-delay="300">Langkah-Langkah Pengembalian Barang:</h4>
+        <ul data-aos="fade-up" data-aos-delay="400">
+            <li>➤ Hubungi layanan pelanggan kami dalam waktu 7 hari setelah menerima barang.</li>
+            <li>➤ Kirimkan bukti foto produk yang diterima beserta nomor pesanan ke email kami.</li>
+            <li>➤ Kami akan memberikan instruksi lebih lanjut untuk pengembalian produk.</li>
+            <li>➤ Setelah barang dikembalikan dan diperiksa, kami akan memproses pengembalian dana atau penggantian produk sesuai dengan kebijakan kami.</li>
+        </ul>
+
+        <p data-aos="fade-up" data-aos-delay="500">Untuk informasi lebih lanjut, silakan hubungi kami di 
+            <a href="mailto:support@mypets.com">support@mypets.com</a>.
+        </p>
+
+        <!-- Tombol -->
+        <div class="tombol-wrapper" data-aos="zoom-in" data-aos-delay="600">
+            <button class="btn-yellow" data-bs-toggle="modal" data-bs-target="#refundModal">Proses Refund</button>
+        </div>
+    </div>
+</section>
+<!-- Refund Barang End -->
+
+<!-- Modal Refund -->
+<div class="modal fade" id="refundModal" tabindex="-1" aria-labelledby="refundModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded shadow">
+  
+        <div class="modal-body">
+          <!-- Tombol Close -->
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <!-- Form Kode Refund -->
+          <form id="kodeRefundForm">
+            <div class="mb-3">
+              <label for="kodeRefund" class="form-label">Kode Refund</label>
+              <input type="text" class="form-control" id="kodeRefund" placeholder="Contoh: RFND12345" required>
+            </div>
+            <button type="submit" class="btn text-white" style="background-color: #f26522;">Verifikasi Kode</button>
+          </form>
+  
+          <!-- Form Detail Refund (Setelah Kode Valid) -->
+          <div id="refundFormDetail" class="mt-4 d-none">
+            <h3 class="mb-3" style="color: #f26522;">Formulir Pengajuan Refund</h3>
+            <form id="formPengajuanRefund">
+              <div class="mb-2">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" required>
+              </div>
+              <div class="mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-2">
+                <label for="hp" class="form-label">Nomor HP</label>
+                <input type="text" class="form-control" id="hp" placeholder="+62..." required>
+              </div>
+              <div class="mb-2">
+                <label for="alamat" class="form-label">Alamat Lengkap</label>
+                <textarea class="form-control" id="alamat" rows="2" required></textarea>
+              </div>
+              <div class="mb-2">
+                <label for="fotoBukti" class="form-label">Upload Foto Produk / Bukti</label>
+                <input type="file" class="form-control" id="fotoBukti" accept="image/*" required>
+              </div>
+              <div class="mb-2">
+                <label for="alasan" class="form-label">Alasan Refund</label>
+                <textarea class="form-control" id="alasan" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn text-white mt-2" style="background-color: #f26522;">Kirim Permintaan</button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <!-- Logo dan Alamat -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <img src="img/logo.png" alt="MyPets Logo" style="max-height: 100px;">
+                    <h6 class="mt-2">PT DUTA MARITIM JAYA</h6>
+                    <p>Jl. T. Amir Hamzah No.55a, Helvetia Tim., Kec. Medan Helvetia,<br>
+                        Kota Medan, Sumatera Utara 20117</p>
+                    <p>Pusat Kebutuhan Hewan Peliharaan Terlengkap Di Indonesia &<br>
+                        Memberikan pelayanan terbaik untuk Anda dan hewan kesayangan Anda.</p>
+                </div>
+    
+                <!-- Ikuti Kami dan WhatsApp -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h6 class="mb-3">Ikuti Kami</h6>
+                    <div class="d-flex mb-3">
+                        <a href="#"><img src="img/ig.png" style="width: 40px;" alt="IG" class="me-2"></a>
+                        <a href="#"><img src="img/tiktok.png" style="width: 40px;" alt="Tiktok" class="me-2"></a>
+                        <a href="#"><img src="img/shopee.jpg" style="width: 40px;" alt="Shopee" class="me-2"></a>
+                        <a href="#"><img src="img/linkedin.png" style="width: 40px;" alt="LinkedIn"></a>
+                    </div>
+                    <a href="https://wa.me/nomoranda" class="btn btn-success btn-sm">
+                        <i class="bi bi-whatsapp me-1"></i> Chat Di Whatsapp
+                    </a>
+                </div>
+    
+                <!-- Link Tautan -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <h6 class="mb-3">Klik Tautan</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="about.html">Tentang Kami</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="service.html">Service</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="franchise.html">Franchise</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="dropshiper.html">Dropshiper</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="product.html">Produk</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="refund.html">Refun</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="artikel.html">Artikel</a></li>
+                        <li><i class="bi bi-caret-right-fill"></i> <a href="contact.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>            
+    
+                <!-- Map -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="400">
+                    <h6 class="mb-3">Map Store</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127684.12261565387!2d98.6644199!3d3.6070103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313126e9bc7785%3A0x986eea96108e5c02!2sPT.%20Duta%20Maritim%20Jaya!5e0!3m2!1sid!2sid!4v1685037073892!5m2!1sid!2sid"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>                       
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer Bawah -->
+<div class="container-fluid bg-dark text-white-50 py-3">
+    <div class="container text-center">
+        <small>&copy; 2025 MyPets. All rights reserved.</small>
+    </div>
+</div>
+<!-- Footer End -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,           // animasi hanya muncul sekali
+    delay: 100,           // jeda awal animasi
+    duration: 800,        // durasi animasi
+    easing: 'ease-in-out' // efek animasinya
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const kodeForm = document.getElementById("kodeRefundForm");
+      const refundFormDetail = document.getElementById("refundFormDetail");
+  
+      // Simulasi verifikasi kode refund
+      kodeForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const kode = document.getElementById("kodeRefund").value.trim();
+  
+        // Contoh verifikasi: kode harus dimulai dengan RFND
+        if (kode.startsWith("RFND")) {
+          Swal.fire({
+            icon: "success",
+            title: "Kode Valid!",
+            text: "Silakan lengkapi formulir refund.",
+            confirmButtonColor: "#f26522"
+          });
+  
+          // Tampilkan formulir refund, sembunyikan form kode
+          kodeForm.classList.add("d-none");
+          refundFormDetail.classList.remove("d-none");
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Kode Tidak Valid",
+            text: "Silakan cek kembali kode refund Anda.",
+            confirmButtonColor: "#f26522"
+          });
+        }
+      });
+  
+      // Saat formulir refund dikirim
+      const formRefund = document.getElementById("formPengajuanRefund");
+      formRefund.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        Swal.fire({
+          icon: "success",
+          title: "Permintaan Terkirim!",
+          text: "Permintaan refund Anda sedang diproses. Kami akan segera menghubungi Anda.",
+          confirmButtonColor: "#f26522"
+        }).then(() => {
+          // Reset form dan tutup modal
+          formRefund.reset();
+          kodeForm.reset();
+          kodeForm.classList.remove("d-none");
+          refundFormDetail.classList.add("d-none");
+  
+          const modal = bootstrap.Modal.getInstance(document.getElementById('refundModal'));
+          modal.hide();
+        });
+      });
+    });
+  </script>
+  
+  
+  
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
